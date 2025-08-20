@@ -44,12 +44,46 @@
       padding: 10px;
       text-align: center;
     } */
-    nav a {
+    /* nav a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-    }
+    } */
+
+    /* default (desktop/tablet) */
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; /* normal */
+}
+
+/* responsive untuk HP */
+@media (max-width: 600px) {
+  nav a {
+    font-size: 0.85rem;   /* tulisan lebih kecil */
+    margin: 0 8px;        /* jarak antar menu lebih rapat */
+  }
+
+  header h1 {
+    font-size: 1.8rem;   /* judul header biar ga kegedean */
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
     nav a:hover {
       color: #f4b400;
     }
@@ -103,36 +137,18 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-
-/* .services .card {
-  flex: 1 1 280px;  
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-} */
     /* Services */
-    .services .card {
-  width: 280px;
-  min-height: 350px;   /* semua minimal setinggi ini */
-  display: inline-block;
-  vertical-align: top;
-  width: 280px;
-      margin: 15px;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-    /* .services .card {
+  .services .card {
+      width: 280px;
+      min-height: 350px;   
       display: inline-block;
+      vertical-align: top;
       width: 280px;
       margin: 15px;
       padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      vertical-align: top;
-      background: #fff;
-    } */
+    }
+
     .services .card img {
       width: 100%;
       height: 150px;
@@ -191,11 +207,11 @@
 
     /* Divider elegan */
     .section-divider {
-  border: none;
-  height: 2px;
-  width: 50%;
-  margin: 5px auto;   /* lebih rapat, tadinya 50px */
-  background: linear-gradient(to right, transparent, #bbb, transparent);
+      border: none;
+      height: 2px;
+      width: 50%;
+      margin: 5px auto;   /* lebih rapat, tadinya 50px */
+      background: linear-gradient(to right, transparent, #bbb, transparent);
 }
   </style>
 </head>
